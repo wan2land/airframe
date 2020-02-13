@@ -1,0 +1,33 @@
+{
+  "name": "airframe.js",
+  "private": true,
+  "author": "Changwan Jun <wan2land@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build",
+    "test": "npm run build && npm run test:lint && npm run test:unit",
+    "test:lint": "eslint 'packages/*/src/**/*.ts'",
+    "test:unit": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.7.7",
+    "@babel/core": "7.7.7",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/plugin-proposal-decorators": "7.7.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.7.7",
+    "@babel/plugin-proposal-optional-chaining": "7.7.5",
+    "@babel/preset-env": "7.7.7",
+    "@babel/preset-typescript": "7.7.7",
+    "@stdjs/eslint-config": "2.0.0",
+    "@types/jest": "24.0.25",
+    "@types/node": "12.12.22",
+    "eslint": "6.8.0",
+    "jest": "24.9.0",
+    "lerna": "^3.20.0",
+    "lerna-update-wizard": "0.17.6",
+    "rimraf": "3.0.0",
+    "ts-jest": "24.2.0",
+    "typescript": "3.7.4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "airframe",
+  "version": "0.0.1",
+  "description": "🛩",
+  "keywords": [
+    "database",
+    "typescript"
+  ],
+  "author": "Changwan Jun <wan2land@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/wan2land/airframe/tree/master/packages/airframe",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./lib && tsc && babel ./src --out-dir ./lib --extensions \".ts\" --ignore \"src/**/*.test.ts\""
+  },
+  "dependencies": {}
+}
